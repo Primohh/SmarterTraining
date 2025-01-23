@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		768FE6F22D4137C000428EA2 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 768FE6F12D4137C000428EA2 /* PopupView */; };
+		76A6D1052D422F3C00F082F9 /* AnimatedTabBar in Frameworks */ = {isa = PBXBuildFile; productRef = 76A6D1042D422F3C00F082F9 /* AnimatedTabBar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				768FE6F22D4137C000428EA2 /* PopupView in Frameworks */,
+				76A6D1052D422F3C00F082F9 /* AnimatedTabBar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +73,7 @@
 			name = SmarterTraining;
 			packageProductDependencies = (
 				768FE6F12D4137C000428EA2 /* PopupView */,
+				76A6D1042D422F3C00F082F9 /* AnimatedTabBar */,
 			);
 			productName = SmarterTraining;
 			productReference = 768FE69E2D411A2700428EA2 /* SmarterTraining.app */;
@@ -102,6 +105,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				768FE6F02D4137C000428EA2 /* XCRemoteSwiftPackageReference "PopupView" */,
+				76A6D1032D422F3C00F082F9 /* XCRemoteSwiftPackageReference "AnimatedTabBar" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 768FE69F2D411A2700428EA2 /* Products */;
@@ -269,12 +273,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.firstaed.SmarterTraining;
+				PRODUCT_BUNDLE_IDENTIFIER = com.primohh.SmarterTraining;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -302,12 +307,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.firstaed.SmarterTraining;
+				PRODUCT_BUNDLE_IDENTIFIER = com.primohh.SmarterTraining;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -351,6 +357,14 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		76A6D1032D422F3C00F082F9 /* XCRemoteSwiftPackageReference "AnimatedTabBar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/AnimatedTabBar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -358,6 +372,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 768FE6F02D4137C000428EA2 /* XCRemoteSwiftPackageReference "PopupView" */;
 			productName = PopupView;
+		};
+		76A6D1042D422F3C00F082F9 /* AnimatedTabBar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76A6D1032D422F3C00F082F9 /* XCRemoteSwiftPackageReference "AnimatedTabBar" */;
+			productName = AnimatedTabBar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

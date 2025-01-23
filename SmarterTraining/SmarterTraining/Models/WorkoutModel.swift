@@ -11,4 +11,7 @@ struct WorkoutModel: Codable {
     var name: String
     var created: Date
     var exercises: [ExerciseModel]
+    var lastUsed: Date?
+    var isPremium: Bool
+    var isUnlocked: Bool
 }

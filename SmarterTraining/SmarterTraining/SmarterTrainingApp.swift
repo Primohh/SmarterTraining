@@ -13,6 +13,9 @@ struct SmarterTrainingApp: App {
         WindowGroup {
             NavigationView {
                 ZStack {
+                    Color(UIColor(named: "BackgroundColor")!)
+                        .ignoresSafeArea()
+                    
                     MainView()
                 }
             }

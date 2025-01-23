@@ -11,12 +11,13 @@ struct FilesHelper {
     
     private let jsonEncoder = JSONEncoder()
     private let jsonDecoder = JSONDecoder()
+    let folderName = "SmarterTraining"
     
     func saveToFile<T: Encodable>(filename: String, content: T) -> Bool {
         let fileDirectory = FileManager.default.urls(for: .allLibrariesDirectory, in: .userDomainMask)
-        let fileName = fileDirectory.first!.path + filename
+        let fileName = fileDirectory.first!.path + folderName + filename
         
-        var existingFile = FileManager.default.fileExists(atPath: fileName)
+        let existingFile = FileManager.default.fileExists(atPath: fileName)
         
         do {
             let jsonContent = try jsonEncoder.encode(content)
@@ -35,9 +36,9 @@ struct FilesHelper {
     
     func getFileContent<T: Decodable>(filename: String, content: T) -> T? {
         let fileDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let fileName = fileDirectory.first!.path + filename
+        let fileName = fileDirectory.first!.path + folderName + filename
         
-        var existingFile = FileManager.default.fileExists(atPath: fileName)
+        let existingFile = FileManager.default.fileExists(atPath: fileName)
         
         if(!existingFile) {
             return nil
@@ -55,6 +56,17 @@ struct FilesHelper {
         }
         catch {
             return nil
+        }
+    }
+    
+    func removeAllFiles() -> Bool {
+        do {
+            //TODO reset files
+            
+            return true
+        }
+        catch {
+            return false
         }
     }
 }

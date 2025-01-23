@@ -1,6 +1,15 @@
 {
-  "originHash" : "d4088df5619d55b73b9309692eb1e6c7ae22a8eb0bc7910ef0b5cf58c0ab9b85",
+  "originHash" : "b3350ead3a3903d1ec5286068fee3ce6d880988e7289a6191a6eb77a068b0380",
   "pins" : [
+    {
+      "identity" : "animatedtabbar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/exyte/AnimatedTabBar",
+      "state" : {
+        "revision" : "b91b07c9bf7490fce76deb90e56bb34c6871b875",
+        "version" : "0.1.4"
+      }
+    },
     {
       "identity" : "popupview",
       "kind" : "remoteSourceControl",

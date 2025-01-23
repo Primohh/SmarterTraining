@@ -8,9 +8,14 @@
 import Foundation
 
 class MainViewModel: ObservableObject {
-    @Published var isFirstLogin: Bool = true
-    
     let userDefaultsHelper = UserDefaultsHelper()
+    
+    @Published var isFirstLogin: Bool = true {
+        didSet {
+            userDefaultsHelper.isFirstLogin = isFirstLogin
+        }
+    }
+    
     
     func initialize() {
         isFirstLogin = userDefaultsHelper.isFirstLogin
